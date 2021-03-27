@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Manjari&display=swap");
+
+body {
+  background: rgb(255, 92, 74);
+  background: linear-gradient(
+    342deg,
+    rgba(255, 92, 74, 1) 30%,
+    rgba(255, 121, 107, 1) 51%,
+    rgba(255, 238, 236, 1) 100%
+  );
+  color: #1b2d35;
+  font-family: "Manjari", sans-serif;
+
+  height: 98.7vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jua", sans-serif;
+}
+
+.button {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: #1b2d35;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+nav .links {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+nav .link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #1b2d35;
+  font-size: 1.5rem;
+}
+
+nav .logo {
+  width: 50px;
+  margin: 10px;
+  margin-left: 45px;
+}
+
+/* Home */
+
+.home {
+  padding: 0 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.home button {
+  margin-top: 10px;
+}
+
+.home h1 {
+  font-size: 3rem;
+}
+
+.home h3 {
+  font-size: 2rem;
+  margin: 5px;
+}
+
+.home .break {
+  height: 10px;
+  width: 100px;
+  border-radius: 30px;
+  background-color: #1b2d35;
+}
+
+.home .cover {
+  width: 800px;
+}
