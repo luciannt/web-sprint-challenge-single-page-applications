@@ -1,11 +1,11 @@
 import React from "react";
-import OrderForm from "../components/Form";
 
 const App = () => {
   return (
     <>
       <h1>Lambda Eats</h1>
       <p>Freshly-made pizza for hard working students</p>
+      <button>Order Now</button>
     </>
   );
 };
