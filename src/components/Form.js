@@ -53,6 +53,7 @@ const OrderForm = () => {
         </div>
         <textarea placeholder="Special Instructions" rows="5" cols="50" />
       </div>
+      <button type="submit">Place Order</button>
     </form>
   );
 };
