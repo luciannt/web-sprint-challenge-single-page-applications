@@ -1,12 +1,16 @@
 import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import OrderForm from "./components/Form";
+import Home from "./components/HomePage";
+import Nav from "./components/Nav";
 
 const App = () => {
   return (
-    <>
-      <h1>Lambda Eats</h1>
-      <p>Freshly-made pizza for hard working students</p>
-      <button>Order Now</button>
-    </>
+    <Router>
+      <Nav />
+      <Route path="/pizza" component={OrderForm} />
+      <Route path="/" exact component={Home} />
+    </Router>
   );
 };
 export default App;
