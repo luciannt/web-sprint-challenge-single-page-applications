@@ -1,11 +1,23 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 
 const OrderForm = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
   return (
-    <form>
+    <form onSubmit={handleSubmit(onSubmit)}>
       <div className="main">
         <h2>Lambda's Famous Pizza</h2>
-        <input name="name" placeholder="Order Name" />
+        <input
+          name="name"
+          placeholder="Order Name"
+          {...register("Order Name", { required: true, minLength: 2 })}
+        />
         <select>
           <option>--Please Select Pizza Size--</option>
           <option>Small</option>
